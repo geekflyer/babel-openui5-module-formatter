@@ -40,7 +40,7 @@ ModuleFormatter.prototype.importDeclaration = function (node, nodes) {
 
 ModuleFormatter.prototype.importSpecifier = function (specifier, node, nodes) {
 
-    this.imports[specifier.id.name] = node.source.value;
+    this.imports[specifier.local.name] = node.source.value;
 
 //    var ref = t.memberExpression(node, t.getSpecifierId(specifier), false);
 //
@@ -101,5 +101,5 @@ ModuleFormatter.prototype._hoistExport = function _hoistExport(declar, assign, p
 
 ModuleFormatter.prototype.exportSpecifier = function (specifier, node, nodes) {
     // export { foo };
-    nodes.push(babelUtil.template('exports-assign', {KEY: specifier.id, VALUE: specifier.id}, true));
+    nodes.push(babelUtil.template('exports-assign', {KEY: specifier.exported, VALUE: specifier.local}, true));
 };
