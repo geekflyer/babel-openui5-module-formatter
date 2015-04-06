@@ -1,6 +1,6 @@
 {
   "name": "babel-openui5-module-formatter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "keywords": ["ui5","sapui5","openui5","babel","babeljs","es6"],
