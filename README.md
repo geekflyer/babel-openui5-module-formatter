@@ -1,3 +1,7 @@
+
+> IMPORTANT: This module is deprecated. Use the babel 6 based plugin instead: https://github.com/geekflyer/babel-plugin-transform-es2015-modules-ui5
+
+
 # babel-openui5-module-formatter [![Build Status](https://travis-ci.org/geekflyer/babel-openui5-module-formatter.svg?branch=master)](https://travis-ci.org/geekflyer/babel-openui5-module-formatter) [![npm version](https://badge.fury.io/js/babel-openui5-module-formatter.svg)](http://badge.fury.io/js/babel-openui5-module-formatter)
 
 This is a custom module formatter for the babel js transpiler. It transpiles ES6 modules to `sap.ui.define` calls (AMD-like syntax).
